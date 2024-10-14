@@ -1,0 +1,13 @@
+name: test
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    name: Build
+    runs-on: [self-hosted, test]
+
+    steps:
+      - name: Echo
+        run: echo "1"
