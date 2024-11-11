@@ -1,0 +1,9 @@
+services:
+  runner:
+    build: .
+    restart: always
+    environment:
+      REPO: hgyoon-w/runner-test
+      ACCESS_TOKEN: ${ACCESS_TOKEN}
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
